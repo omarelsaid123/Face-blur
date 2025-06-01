@@ -1,25 +1,35 @@
-✨ Features
-✅ Real-time face detection from webcam
-✅ Blurs frontal and side-profile faces
-✅ Detects right-facing profiles using flipped image
-✅ Uses Haar Cascades for fast and reliable detection
-✅ Easy to use and modify for privacy applications
+📌 Overview
+This project uses Python and OpenCV to detect and blur both frontal and side-profile faces in real time from a webcam feed. It's designed to enhance privacy by masking all detected face regions with a blur effect. Side-profile detection is handled for both left and right profiles, ensuring better coverage by flipping the grayscale image when needed.
 
-⚙️ How It Works
-🎥 Captures video frames from your webcam
+🛠️ Built With:
+🐍 Python 3
+📷 OpenCV – for image processing and face detection
+🔢 NumPy – for efficient array operations
 
-🧠 Converts each frame to grayscale for detection
+🚀 Features:
 
-👁️ Detects:
+🎥 Real-time video capture from webcam
+👤 Frontal face detection and blurring
+🧭 Side-profile face detection (left and right)
+🔄 Frame flipping for detecting right-facing profiles
+💨 Smooth blur effect applied to detected faces
+🛑 Press q anytime to exit the video window
 
+🧠 How It Works:
+
+OpenCV captures a frame from your webcam
+Converts the frame to grayscale for more efficient processing
+Uses Haar Cascades to detect:
 Frontal faces
+Left-facing side profiles
+Right-facing profiles by flipping the grayscale image
+Applies a strong blur to each detected face region
+Displays the updated frame in real time
 
-Left-facing profiles
+📸 Demo Output:
+Real-time webcam feed with blurred face regions:
 
-Right-facing profiles (by flipping grayscale)
+🧍‍♂️ Frontal faces = blurred
+👤 Side profiles = blurred
+➕ Multiple faces can be blurred simultaneously
 
-💨 Applies blur to all detected face areas
-
-🖼️ Displays the processed video feed
-
-❌ Press q to exit the window
