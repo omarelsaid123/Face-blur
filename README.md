@@ -1,2 +1,25 @@
-# Face-blur
-This script captures real-time video from a webcam and detects both frontal and side-profile faces using Haar Cascade classifiers. Each detected face region is blurred to help preserve privacy. It also handles right-facing profiles by flipping the grayscale image for better detection coverage.
+✨ Features
+✅ Real-time face detection from webcam
+✅ Blurs frontal and side-profile faces
+✅ Detects right-facing profiles using flipped image
+✅ Uses Haar Cascades for fast and reliable detection
+✅ Easy to use and modify for privacy applications
+
+⚙️ How It Works
+🎥 Captures video frames from your webcam
+
+🧠 Converts each frame to grayscale for detection
+
+👁️ Detects:
+
+Frontal faces
+
+Left-facing profiles
+
+Right-facing profiles (by flipping grayscale)
+
+💨 Applies blur to all detected face areas
+
+🖼️ Displays the processed video feed
+
+❌ Press q to exit the window
